@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 4</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p id="numdot"> XXX </p>
+    <button type="button" id="normalOn">Normal On</button>
+    <button type="button" id="normalOff">Normal off</button>
+    <p>
+    <button id="lightOn">Lights On</button>
+    <button id="lightOff">Lights Off</button>
+    </p>
+    <p>
+    Light X: <input type="range" min="-500" max="500" value="0" class="slider" id="lightSlideX">
+    Light Y: <input type="range" min="-500" max="500" value="100" class="slider" id="lightSlideY">
+    Light Z: <input type="range" min="-500" max="500" value="-200" class="slider" id="lightSlideZ">
+    </p>
+    <p>
+    leftfront1 <input type="range" min="-45" max="45" value="0" class="slider" id="lf1Slide">
+    Animation:
+    <button type="button" id="animationlf1OnButton">ON</button>
+    <button type="button" id="animationlf1OffButton">OFF</button>
+    </p>
+    <p>
+    rigthfront1 <input type="range" min="-45" max="45" value="0" class="slider" id="rf1Slide">
+    Animation:
+    <button type="button" id="animationrf1OnButton">ON</button>
+    <button type="button" id="animationrf1OffButton">OFF</button>
+    </p>
+    <p>
+    leftback1 <input type="range" min="0" max="90" value="0" class="slider" id="lb1Slide">
+    Animation:
+    <button type="button" id="animationlb1OnButton">ON</button>
+    <button type="button" id="animationlb1OffButton">OFF</button>
+    </p>
+    <p>
+    rightback1 <input type="range" min="45" max="90" value="0" class="slider" id="rb1Slide">
+    Animation:
+    <button type="button" id="animationrb1OnButton">ON</button>
+    <button type="button" id="animationrb1OffButton">OFF</button>
+    </p>
+    <p>
+    leftback3 <input type="range" min="0" max="90" value="0" class="slider" id="lb3Slide">
+    Animation:
+    <button type="button" id="animationlb3OnButton">ON</button>
+    <button type="button" id="animationlb3OffButton">OFF</button>
+    </p>
+    <p>
+    rightback3 <input type="range" min="45" max="90" value="0" class="slider" id="rb3Slide">
+    Animation:
+    <button type="button" id="animationrb3OnButton">ON</button>
+    <button type="button" id="animationrb3OffButton">OFF</button>
+    </p>
+    <p>
+    Camera Angle <input type="range" min="0" max="360" value="5" class="slider" id="angleSlide">
+    </p>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="camera.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Points.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
